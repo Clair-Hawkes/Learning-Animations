@@ -1,0 +1,1 @@
+Idea 1: Create a form/table with animated shapes moving around the outline.
