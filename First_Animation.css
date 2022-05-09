@@ -1,0 +1,52 @@
+div{
+    width: 48px;
+    height: 48px;
+    background-color: blue;
+    border:1px solid black
+}
+#Left{
+    transition-timing-function: linear;
+    animation: GoRight 6s infinite;
+}
+@keyframes GoRight {
+    0%,100%{
+        transform:translate(0,0) rotate(0);
+        background: blue;
+        border-radius: 50%;
+    }
+    25%{
+        transform: translate(1000px,0px);
+    }
+    50%{
+        transform: translate(1000px,500px) rotate(365deg);
+        background-color: blueviolet;
+        border-radius:0;
+    }
+    75%{
+        transform: translate(0,500px);
+    }
+}
+#Right{
+    margin-left:1000px;
+    margin-top:500px;
+    transition-timing-function:ease-in-out ;
+    animation: GoLeft 6s infinite;
+}
+@keyframes GoLeft {
+    0%,100%{
+        transform:translate(0,0) rotate(0);
+        background: blue;
+        border-radius: 50%;
+    }
+    25%{
+        transform: translate(-1000px,0px);
+    }
+    50%{
+        transform: translate(-1000px,-500px) rotate(365deg);
+        background-color: blueviolet;
+        border-radius:0;
+    }
+    75%{
+        transform: translate(0,-500px);
+    }
+}

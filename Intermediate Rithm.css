@@ -1,0 +1,39 @@
+div{
+    width: 200px;
+    height:200px;
+    background-color: aqua;
+    text-align: center;
+    text-decoration: wavy;
+    font-size: x-large;
+    color: yellow;
+    border-style: solid;
+}
+
+#Transform:hover{
+    transform: scale(2,3) rotate(90deg) translate(100px,100px);
+    transition: transform 5s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
+    background-color:blueviolet;
+    border-radius: 7px;
+
+}
+button{
+    transition: green .5s, color .5s linear, 4px 2s ease-out;
+}
+form{
+    position:absolute;
+    right:0;
+}
+button:hover{
+    background-color: yellow;
+}
+p{
+    font-size:14px;
+    text-shadow:2em;
+    transition-property: font-size;
+    transition-duration:4s ;
+    transition-delay:5s;
+
+}
+p:hover{
+    font-size:36px;
+}
